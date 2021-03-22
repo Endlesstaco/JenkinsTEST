@@ -1,0 +1,77 @@
+git config --global user.name 'Endlesstaco'							//sets the username
+git config --global user.email 'georgiev833@gmail.com' 				// sets the email
+mkdir ~/EndavaHW 													// creates EndavaHW dir 
+cd ~/EndavaHW 														// goes into EndavaHW dir
+git init 															// Initializing the dir as a repository
+git remote add origin https://github.com/Endlesstaco/EndavaHW.git 	// Adds the github repository URL 
+git push -u origin master 											// Adds the github repository as the origin 
+cp  ~/Script . 														// the script copies itself into the dir 
+git status 															// status of the git repository 
+git add Script 														// adds the script to the git repository
+git commit -m "Commiting the Script" 								// commiting the changes 
+git push 															// Pushing the changes 
+echo $(date) >> ~/EndavaHW/date	 									// printing the current date and time and redirecting it into a file 
+git add ~/date   													// adds the date and time file into the git repository
+git commit -m "Commiting the date file" 
+git push 
+git branch HopeItWorks 												// creating a new branch 
+echo $(date) >> ~/EndavaHW/date										// Printing the current date and time and appeding it into the date file 
+git diff
+cat ~/EndavaHW/date													// Show how that file is different from what it used to be 
+git commit -m "Finalizing the chnages" 
+git push 
+git merge HopeItWorks												// Merging the HopeItWorks branch with the master 
+
+
+
+
+
+
+13 i 14
+kinda sus
+samiq fail, koito pravish
+trqbva da e v direktoriqta, kydeto si napravil "git init-a"
+v sluchaq EndavaHW
+edin vid tova ti e lokalnoto repository i tam skladirash vsichko
+17 bi trqqlo da e
+vsyshtnost ne sym siguren, moje bi i taka she e okay
+az po princip si pravq branchovete s
+git checkout -b "ime-na-noviq-branch"
+tva s how it used to be neshto ne go hvashtam i az
+veroqtno iskat da polzvash "diff" komandata
+ili "git diff" ?
+bali go 😃 tva go proveri
+inache mai e okay
+
+
+
+ #!/bin/bash
+
+git config --global user.name 'Endlesstaco'                             #sets the username
+git config --global user.email 'georgiev833@gmail.com'                  # sets the email
+mkdir ~/EndavaHW                                                        # creates EndavaHW dir
+cd ~/EndavaHW                                                           # goes into EndavaHW dir
+git init                                                                # Initializing the dir as a repository
+git remote add origin https://github.com/Endlesstaco/EndavaHW.git       # Adds the github repository URL
+touch README.md															
+git add . 
+git commit -m 'initial commit' 											# Without the readme file and commiting it I was facing an error with the push request
+git push -u origin master                                               # Adds the github repository as the origin
+cp  ~/Script .                                                          # the script copies itself into the dir
+git status                                                              # status of the git repository
+git add Script                                                          # adds the script to the git repository
+git commit -m "Commiting the Script"                                    # commiting the changes
+git push                                                                # Pushing the changes
+echo $(date) >> ~/EndavaHW/date                                         # printing the current date and time and redirecting it into a file
+git add ~/date                                                          # adds the date and time file into the git repository
+git commit -m "Commiting the date file"
+git push
+git branch HopeItWorks                                                  # creating a new branch
+echo $(date) >> ~/EndavaHW/date                                         # Printing the current date and time and appeding it into the date file
+git diff
+cat ~/EndavaHW/date                                                     # Show how that file is different from what it used to be
+git commit -m "Finalizing the chnages"
+git push
+git merge HopeItWorks                                                   # Merging the HopeItWorks branch with the master
+
+
