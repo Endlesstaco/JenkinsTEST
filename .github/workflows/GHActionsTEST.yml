@@ -1,0 +1,26 @@
+
+name: Test Workflow
+
+
+on: 
+  push:
+  pull_request:
+    branches: 
+      - master
+      - main
+
+jobs:
+  test:
+    name: Testing CI/CD 
+    runs-on: ubuntu-latest
+    steps:
+  
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Clone directory / cat the readme file 
+         run: 
+            git clone https://github.com/Endlesstaco/TEST.git .
+        name: Shows the information into the rep file
+        run:
+            cat README.md
+          
