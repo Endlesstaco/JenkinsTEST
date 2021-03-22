@@ -16,8 +16,7 @@ jobs:
   
       - name: Checkout code
         uses: actions/checkout@v2
-     
-     - name: Clone directory / cat the readme file 
+      - name: Clone directory / cat the readme file 
         run: 
           sh 'git clone https://github.com/Endlesstaco/TEST.git .'
           sh 'cat README.md'
